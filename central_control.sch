@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,218 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 60241133
+P 4100 4700
+F 0 "#PWR?" H 4100 4450 50  0001 C CNN
+F 1 "GND" H 4105 4527 50  0000 C CNN
+F 2 "" H 4100 4700 50  0001 C CNN
+F 3 "" H 4100 4700 50  0001 C CNN
+	1    4100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 602417FD
+P 4100 2650
+F 0 "#PWR?" H 4100 2500 50  0001 C CNN
+F 1 "+3.3V" H 4115 2823 50  0000 C CNN
+F 2 "" H 4100 2650 50  0001 C CNN
+F 3 "" H 4100 2650 50  0001 C CNN
+	1    4100 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2650 4100 2700
+Wire Wire Line
+	4650 3850 4700 3850
+Wire Wire Line
+	4650 3950 4700 3950
+Text Label 4700 3850 0    50   ~ 0
+I2C1_SCL
+Text Label 4700 3950 0    50   ~ 0
+I2C1_SDA
+$Comp
+L MCU_ST_STM32L0:STM32L071K8Ux U?
+U 1 1 60242AF7
+P 4050 3650
+F 0 "U?" H 3700 4500 50  0000 C CNN
+F 1 "STM32L071K8Ux" H 4600 4500 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 3550 2850 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141136.pdf" H 4050 3650 50  0001 C CNN
+	1    4050 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4550 3950 4600
+Wire Wire Line
+	3950 4600 4050 4600
+Wire Wire Line
+	4050 4600 4050 4550
+Wire Wire Line
+	4050 4600 4100 4600
+Connection ~ 4050 4600
+Wire Wire Line
+	4100 4600 4150 4600
+Wire Wire Line
+	4150 4600 4150 4550
+Connection ~ 4100 4600
+Wire Wire Line
+	4150 4600 4250 4600
+Wire Wire Line
+	4250 4600 4250 4550
+Connection ~ 4150 4600
+Wire Wire Line
+	4100 4600 4100 4700
+Wire Wire Line
+	3950 2750 3950 2700
+Wire Wire Line
+	3950 2700 4050 2700
+Wire Wire Line
+	4250 2700 4250 2750
+Wire Wire Line
+	4150 2750 4150 2700
+Connection ~ 4150 2700
+Wire Wire Line
+	4150 2700 4250 2700
+Wire Wire Line
+	4050 2750 4050 2700
+Connection ~ 4050 2700
+Wire Wire Line
+	4050 2700 4100 2700
+Connection ~ 4100 2700
+Wire Wire Line
+	4100 2700 4150 2700
+$Comp
+L Device:C C?
+U 1 1 6024741A
+P 4800 1900
+F 0 "C?" H 4850 2000 50  0000 L CNN
+F 1 "100n" H 4850 1800 50  0000 L CNN
+F 2 "" H 4838 1750 50  0001 C CNN
+F 3 "~" H 4800 1900 50  0001 C CNN
+	1    4800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 602475A2
+P 5100 1900
+F 0 "C?" H 5150 2000 50  0000 L CNN
+F 1 "100n" H 5150 1800 50  0000 L CNN
+F 2 "" H 5138 1750 50  0001 C CNN
+F 3 "~" H 5100 1900 50  0001 C CNN
+	1    5100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 602478C0
+P 5400 1900
+F 0 "C?" H 5450 2000 50  0000 L CNN
+F 1 "100n" H 5450 1800 50  0000 L CNN
+F 2 "" H 5438 1750 50  0001 C CNN
+F 3 "~" H 5400 1900 50  0001 C CNN
+	1    5400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60247A25
+P 5700 1900
+F 0 "C?" H 5750 2000 50  0000 L CNN
+F 1 "100n" H 5750 1800 50  0000 L CNN
+F 2 "" H 5738 1750 50  0001 C CNN
+F 3 "~" H 5700 1900 50  0001 C CNN
+	1    5700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 602480F3
+P 6000 1900
+F 0 "C?" H 6050 2000 50  0000 L CNN
+F 1 "10u" H 6050 1800 50  0000 L CNN
+F 2 "" H 6038 1750 50  0001 C CNN
+F 3 "~" H 6000 1900 50  0001 C CNN
+	1    6000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1750 4800 1700
+Wire Wire Line
+	4800 1700 5100 1700
+Wire Wire Line
+	6000 1700 6000 1750
+Wire Wire Line
+	5700 1750 5700 1700
+Connection ~ 5700 1700
+Wire Wire Line
+	5700 1700 6000 1700
+Wire Wire Line
+	5400 1750 5400 1700
+Connection ~ 5400 1700
+Wire Wire Line
+	5400 1700 5700 1700
+Wire Wire Line
+	5100 1750 5100 1700
+Connection ~ 5100 1700
+Wire Wire Line
+	5100 1700 5400 1700
+Wire Wire Line
+	5400 1700 5400 1650
+Wire Wire Line
+	4800 2050 4800 2100
+Wire Wire Line
+	4800 2100 5100 2100
+Wire Wire Line
+	6000 2100 6000 2050
+Wire Wire Line
+	5700 2050 5700 2100
+Connection ~ 5700 2100
+Wire Wire Line
+	5700 2100 6000 2100
+Wire Wire Line
+	5400 2050 5400 2100
+Connection ~ 5400 2100
+Wire Wire Line
+	5400 2100 5700 2100
+Wire Wire Line
+	5100 2050 5100 2100
+Connection ~ 5100 2100
+Wire Wire Line
+	5100 2100 5400 2100
+Wire Wire Line
+	5400 2100 5400 2150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6024B3DF
+P 5400 1650
+F 0 "#PWR?" H 5400 1500 50  0001 C CNN
+F 1 "+3.3V" H 5415 1823 50  0000 C CNN
+F 2 "" H 5400 1650 50  0001 C CNN
+F 3 "" H 5400 1650 50  0001 C CNN
+	1    5400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6024B76E
+P 5400 2150
+F 0 "#PWR?" H 5400 1900 50  0001 C CNN
+F 1 "GND" H 5405 1977 50  0000 C CNN
+F 2 "" H 5400 2150 50  0001 C CNN
+F 3 "" H 5400 2150 50  0001 C CNN
+	1    5400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4250 4700 4250
+Wire Wire Line
+	4650 4350 4700 4350
+Text Label 4700 4250 0    50   ~ 0
+SWDIO
+Text Label 4700 4350 0    50   ~ 0
+SWDCLK
 $EndSCHEMATC
