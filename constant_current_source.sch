@@ -19,8 +19,8 @@ U 1 1 601DBDCB
 P 5350 3050
 F 0 "U?" H 5350 3675 50  0000 C CNN
 F 1 "LT3474" H 5350 3584 50  0000 C CNN
-F 2 "" H 5350 3100 50  0001 C CNN
-F 3 "" H 5350 3100 50  0001 C CNN
+F 2 "Package_SO:TSSOP-16-1EP_4.4x5mm_P0.65mm" H 5350 3100 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3474fd.pdf" H 5350 3100 50  0001 C CNN
 	1    5350 3050
 	1    0    0    -1  
 $EndComp
