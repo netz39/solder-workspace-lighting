@@ -31,4 +31,6 @@ U 601D8ADF
 F0 "high_power_LED" 50
 F1 "high_power_LED.sch" 50
 $EndSheet
+Text Notes 4750 5200 0    79   ~ 0
+each sheet stands for a single pcb
 $EndSCHEMATC

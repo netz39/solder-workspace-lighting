@@ -148,7 +148,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 2700 4450 2400
 Wire Wire Line
-	4450 2400 3850 2400
+	4450 2400 4100 2400
 Wire Wire Line
 	3850 2400 3850 2450
 $Comp
@@ -471,4 +471,20 @@ Wire Wire Line
 Connection ~ 6000 2750
 Wire Wire Line
 	6000 2750 6300 2750
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 604F43EE
+P 4100 2300
+F 0 "#FLG?" H 4100 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 4100 2473 50  0000 C CNN
+F 2 "" H 4100 2300 50  0001 C CNN
+F 3 "~" H 4100 2300 50  0001 C CNN
+	1    4100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2300 4100 2400
+Connection ~ 4100 2400
+Wire Wire Line
+	4100 2400 3850 2400
 $EndSCHEMATC
