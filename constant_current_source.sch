@@ -404,7 +404,7 @@ Wire Wire Line
 Text Notes 3750 1950 0    50   ~ 0
 constant current source - buck converter
 $Comp
-L Device:Q_PMOS_GSD Q?
+L Device:Q_NMOS_GSD Q?
 U 1 1 6020B63A
 P 5750 3950
 F 0 "Q?" H 5900 3850 50  0000 L CNN
