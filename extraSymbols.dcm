@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 24LC64
+D I²C EEPROM in SOT23-5 package
+$ENDCMP
+#
 $CMP LT3474
 D Step-Down 1A LED Driver
 F https://www.analog.com/media/en/technical-documentation/data-sheets/3474fd.pdf
