@@ -5,4 +5,8 @@ D Step-Down 1A LED Driver
 F https://www.analog.com/media/en/technical-documentation/data-sheets/3474fd.pdf
 $ENDCMP
 #
+$CMP STM32G0C1KxU
+F https://www.st.com/resource/en/datasheet/stm32g0c1kc.pdf
+$ENDCMP
+#
 #End Doc Library
