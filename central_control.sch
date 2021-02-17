@@ -898,4 +898,149 @@ Text Label 10300 1050 2    50   ~ 0
 FDCAN1_RX
 Text Label 10300 1150 2    50   ~ 0
 FDCAN1_TX
+Text Notes 9850 850  0    47   ~ 0
+Extern transceiver needed!
+Text Label 4150 4350 2    50   ~ 0
+I2C1_SCL
+Text Label 4150 4550 2    50   ~ 0
+I2C1_SDA
+$Comp
+L extraSymbols:24LC64 U?
+U 1 1 602DEC51
+P 4850 4500
+F 0 "U?" H 4850 4915 50  0000 C CNN
+F 1 "24LC64" H 4850 4824 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4850 4500 50  0001 C CNN
+F 3 "" H 4850 4500 50  0001 C CNN
+	1    4850 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 602E6B83
+P 5400 4750
+F 0 "C?" H 5450 4850 50  0000 L CNN
+F 1 "100n" H 5450 4650 50  0000 L CNN
+F 2 "" H 5438 4600 50  0001 C CNN
+F 3 "~" H 5400 4750 50  0001 C CNN
+	1    5400 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 602E6DA5
+P 5400 4500
+F 0 "#PWR?" H 5400 4350 50  0001 C CNN
+F 1 "+3.3V" H 5415 4673 50  0000 C CNN
+F 2 "" H 5400 4500 50  0001 C CNN
+F 3 "" H 5400 4500 50  0001 C CNN
+	1    5400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602E6F57
+P 4850 5000
+F 0 "#PWR?" H 4850 4750 50  0001 C CNN
+F 1 "GND" H 4855 4827 50  0000 C CNN
+F 2 "" H 4850 5000 50  0001 C CNN
+F 3 "" H 4850 5000 50  0001 C CNN
+	1    4850 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4550 5400 4550
+Wire Wire Line
+	5400 4550 5400 4500
+Wire Wire Line
+	5400 4550 5400 4600
+Connection ~ 5400 4550
+$Comp
+L Device:R R?
+U 1 1 602F88ED
+P 4200 4100
+F 0 "R?" V 4200 4050 50  0000 L CNN
+F 1 "2k" V 4300 4050 50  0000 L CNN
+F 2 "" V 4130 4100 50  0001 C CNN
+F 3 "~" H 4200 4100 50  0001 C CNN
+	1    4200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 602F8BDB
+P 4400 4100
+F 0 "R?" V 4400 4050 50  0000 L CNN
+F 1 "2k" V 4500 4050 50  0000 L CNN
+F 2 "" V 4330 4100 50  0001 C CNN
+F 3 "~" H 4400 4100 50  0001 C CNN
+	1    4400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4250 4200 4350
+Wire Wire Line
+	4200 4350 4150 4350
+Wire Wire Line
+	4200 4350 4500 4350
+Connection ~ 4200 4350
+Wire Wire Line
+	4400 4250 4400 4550
+Wire Wire Line
+	4400 4550 4150 4550
+Wire Wire Line
+	4400 4550 4500 4550
+Connection ~ 4400 4550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6030A91E
+P 4300 3850
+F 0 "#PWR?" H 4300 3700 50  0001 C CNN
+F 1 "+3.3V" H 4315 4023 50  0000 C CNN
+F 2 "" H 4300 3850 50  0001 C CNN
+F 3 "" H 4300 3850 50  0001 C CNN
+	1    4300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3850 4300 3900
+Wire Wire Line
+	4300 3900 4200 3900
+Wire Wire Line
+	4200 3900 4200 3950
+Wire Wire Line
+	4300 3900 4400 3900
+Wire Wire Line
+	4400 3900 4400 3950
+Connection ~ 4300 3900
+Wire Wire Line
+	4450 4450 4500 4450
+Wire Wire Line
+	5400 4950 5400 4900
+Wire Wire Line
+	4450 4950 4850 4950
+Wire Wire Line
+	4450 4450 4450 4950
+Wire Wire Line
+	4850 5000 4850 4950
+Connection ~ 4850 4950
+Wire Wire Line
+	4850 4950 5250 4950
+Wire Wire Line
+	5200 4350 5250 4350
+Wire Wire Line
+	5250 4350 5250 4950
+Connection ~ 5250 4950
+Wire Wire Line
+	5250 4950 5400 4950
+Wire Notes Line
+	3750 5250 5700 5250
+Wire Notes Line
+	5700 5250 5700 3600
+Wire Notes Line
+	5700 3600 3750 3600
+Wire Notes Line
+	3750 3600 3750 5250
+Text Notes 3750 3550 0    50   ~ 0
+EEPROM for configuration
 $EndSCHEMATC
