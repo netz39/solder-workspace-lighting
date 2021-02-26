@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L extraSymbols:LT3474 U?
+L extraSymbols:LT3474 U1
 U 1 1 601DBDCB
 P 5350 3050
-F 0 "U?" H 5350 3675 50  0000 C CNN
+F 0 "U1" H 5350 3675 50  0000 C CNN
 F 1 "LT3474" H 5350 3584 50  0000 C CNN
 F 2 "Package_SO:TSSOP-16-1EP_4.4x5mm_P0.65mm" H 5350 3100 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3474fd.pdf" H 5350 3100 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3474fd.
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR02
 U 1 1 601DD2F4
 P 5350 3750
-F 0 "#PWR?" H 5350 3500 50  0001 C CNN
+F 0 "#PWR02" H 5350 3500 50  0001 C CNN
 F 1 "GND" H 5355 3577 50  0000 C CNN
 F 2 "" H 5350 3750 50  0001 C CNN
 F 3 "" H 5350 3750 50  0001 C CNN
@@ -38,12 +38,12 @@ $EndComp
 Wire Wire Line
 	5350 3750 5350 3700
 $Comp
-L Device:C C?
+L Device:C C4
 U 1 1 601DD8D8
 P 4900 3500
-F 0 "C?" H 5000 3400 50  0000 R CNN
+F 0 "C4" H 5000 3400 50  0000 R CNN
 F 1 "3n3" H 5100 3600 50  0000 R CNN
-F 2 "" H 4938 3350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 3350 50  0001 C CNN
 F 3 "~" H 4900 3500 50  0001 C CNN
 	1    4900 3500
 	1    0    0    1   
@@ -80,12 +80,12 @@ Connection ~ 4250 3300
 Wire Wire Line
 	4250 3300 4450 3300
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 601DF467
 P 4250 3500
-F 0 "R?" V 4250 3450 50  0000 L CNN
+F 0 "R4" V 4250 3450 50  0000 L CNN
 F 1 "2k" V 4350 3500 50  0000 L CNN
-F 2 "" V 4180 3500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 3500 50  0001 C CNN
 F 3 "~" H 4250 3500 50  0001 C CNN
 	1    4250 3500
 	1    0    0    -1  
@@ -95,29 +95,18 @@ Wire Wire Line
 Wire Wire Line
 	4250 3700 4500 3700
 $Comp
-L Device:R R?
+L Device:R R3
 U 1 1 601DEB7E
 P 4250 3100
-F 0 "R?" V 4250 3050 50  0000 L CNN
+F 0 "R3" V 4250 3050 50  0000 L CNN
 F 1 "4k7" V 4350 3050 50  0000 L CNN
-F 2 "" V 4180 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 3100 50  0001 C CNN
 F 3 "~" H 4250 3100 50  0001 C CNN
 	1    4250 3100
 	1    0    0    -1  
 $EndComp
 Text Notes 5150 3900 2    50   ~ 0
 I_LED= V_ADJ/V_REF\n0,3A = 0,375V/1,25V
-$Comp
-L Connector:Conn_01x01_Female J?
-U 1 1 601E5ECF
-P 3450 2800
-F 0 "J?" H 3250 2750 50  0000 C CNN
-F 1 "SHDN" H 3250 2850 50  0000 C CNN
-F 2 "" H 3450 2800 50  0001 C CNN
-F 3 "~" H 3450 2800 50  0001 C CNN
-	1    3450 2800
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4950 2800 3850 2800
 Wire Wire Line
@@ -131,12 +120,12 @@ Wire Wire Line
 	3850 3450 3850 3700
 Connection ~ 4250 3700
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP1
 U 1 1 601EC0F6
 P 3850 2600
-F 0 "JP?" H 3800 2700 50  0000 L CNN
+F 0 "JP1" H 3800 2700 50  0000 L CNN
 F 1 "SolderJumper_2_Open" V 3895 2668 50  0001 L CNN
-F 2 "" H 3850 2600 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3850 2600 50  0001 C CNN
 F 3 "~" H 3850 2600 50  0001 C CNN
 	1    3850 2600
 	0    1    1    0   
@@ -151,38 +140,27 @@ Wire Wire Line
 	4450 2400 4100 2400
 Wire Wire Line
 	3850 2400 3850 2450
-$Comp
-L Connector:Conn_01x01_Female J?
-U 1 1 601ED7C4
-P 3450 2400
-F 0 "J?" H 3250 2350 50  0000 C CNN
-F 1 "VIN" H 3250 2450 50  0000 C CNN
-F 2 "" H 3450 2400 50  0001 C CNN
-F 3 "~" H 3450 2400 50  0001 C CNN
-	1    3450 2400
-	-1   0    0    1   
-$EndComp
 Connection ~ 3850 2400
 Wire Wire Line
 	3650 2400 3850 2400
 $Comp
-L Device:C C?
+L Device:C C2
 U 1 1 601F2317
 P 4600 2500
-F 0 "C?" H 4650 2600 50  0000 L CNN
+F 0 "C2" H 4650 2600 50  0000 L CNN
 F 1 "10u 16V" H 4500 2400 50  0000 L CNN
-F 2 "" H 4638 2350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4638 2350 50  0001 C CNN
 F 3 "~" H 4600 2500 50  0001 C CNN
 	1    4600 2500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C3
 U 1 1 601F2971
 P 4900 2500
-F 0 "C?" H 4950 2600 50  0000 L CNN
+F 0 "C3" H 4950 2600 50  0000 L CNN
 F 1 "2u2 16V" H 4900 2400 50  0000 L CNN
-F 2 "" H 4938 2350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 2350 50  0001 C CNN
 F 3 "~" H 4900 2500 50  0001 C CNN
 	1    4900 2500
 	1    0    0    -1  
@@ -198,10 +176,10 @@ Connection ~ 4600 2700
 Wire Wire Line
 	4600 2700 4450 2700
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 601F37F5
 P 4750 2250
-F 0 "#PWR?" H 4750 2000 50  0001 C CNN
+F 0 "#PWR01" H 4750 2000 50  0001 C CNN
 F 1 "GND" H 4755 2077 50  0000 C CNN
 F 2 "" H 4750 2250 50  0001 C CNN
 F 3 "" H 4750 2250 50  0001 C CNN
@@ -220,23 +198,23 @@ Connection ~ 4750 2300
 Wire Wire Line
 	4750 2300 4600 2300
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 601FB2F4
 P 3850 3300
-F 0 "R?" V 3850 3250 50  0000 L CNN
+F 0 "R1" V 3850 3250 50  0000 L CNN
 F 1 "10k" V 3950 3250 50  0000 L CNN
-F 2 "" V 3780 3300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 3300 50  0001 C CNN
 F 3 "~" H 3850 3300 50  0001 C CNN
 	1    3850 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 601FB781
 P 4050 3300
-F 0 "R?" V 4050 3250 50  0000 L CNN
+F 0 "R2" V 4050 3250 50  0000 L CNN
 F 1 "10k" V 4150 3250 50  0000 L CNN
-F 2 "" V 3980 3300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3980 3300 50  0001 C CNN
 F 3 "~" H 4050 3300 50  0001 C CNN
 	1    4050 3300
 	1    0    0    -1  
@@ -254,17 +232,6 @@ Wire Wire Line
 Connection ~ 4050 3700
 Wire Wire Line
 	4050 3700 4250 3700
-$Comp
-L Connector:Conn_01x01_Female J?
-U 1 1 60202E06
-P 6800 3200
-F 0 "J?" H 6600 3150 50  0000 C CNN
-F 1 "PWM" H 6600 3250 50  0000 C CNN
-F 2 "" H 6800 3200 50  0001 C CNN
-F 3 "~" H 6800 3200 50  0001 C CNN
-	1    6800 3200
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	6600 3200 6450 3200
 Wire Wire Line
@@ -274,34 +241,34 @@ Wire Wire Line
 Wire Wire Line
 	5800 3100 5750 3100
 $Comp
-L Device:L L?
+L Device:L L1
 U 1 1 6020600C
 P 6000 2950
-F 0 "L?" H 6052 2996 50  0000 L CNN
+F 0 "L1" H 6052 2996 50  0000 L CNN
 F 1 "3u3" H 6052 2905 50  0000 L CNN
-F 2 "" H 6000 2950 50  0001 C CNN
+F 2 "Inductor_SMD:L_Abracon_ASPI-3012S" H 6000 2950 50  0001 C CNN
 F 3 "~" H 6000 2950 50  0001 C CNN
 	1    6000 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D?
+L Device:D_Schottky D1
 U 1 1 60206A7E
 P 6300 2950
-F 0 "D?" V 6254 3030 50  0000 L CNN
+F 0 "D1" V 6254 3030 50  0000 L CNN
 F 1 "MBR0520L" H 6350 3000 50  0000 L CNN
-F 2 "" H 6300 2950 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 6300 2950 50  0001 C CNN
 F 3 "~" H 6300 2950 50  0001 C CNN
 	1    6300 2950
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C6
 U 1 1 60208B4A
 P 6000 3500
-F 0 "C?" H 6050 3600 50  0000 L CNN
+F 0 "C6" H 6050 3600 50  0000 L CNN
 F 1 "2u2 16V" H 5900 3400 50  0000 L CNN
-F 2 "" H 6038 3350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 3350 50  0001 C CNN
 F 3 "~" H 6000 3500 50  0001 C CNN
 	1    6000 3500
 	1    0    0    -1  
@@ -328,12 +295,12 @@ Wire Wire Line
 	6300 3700 6000 3700
 Connection ~ 6000 3700
 $Comp
-L Device:C C?
+L Device:C C5
 U 1 1 602178A4
 P 6000 2600
-F 0 "C?" H 6050 2700 50  0000 L CNN
+F 0 "C5" H 6050 2700 50  0000 L CNN
 F 1 "220n" H 6050 2500 50  0000 L CNN
-F 2 "" H 6038 2450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 2450 50  0001 C CNN
 F 3 "~" H 6000 2600 50  0001 C CNN
 	1    6000 2600
 	0    -1   -1   0   
@@ -359,40 +326,29 @@ Wire Notes Line
 	6500 2000 3750 2000
 Wire Notes Line
 	3750 2000 3750 4200
-$Comp
-L Connector:Conn_01x01_Female J?
-U 1 1 602218C3
-P 5450 4500
-F 0 "J?" H 5250 4450 50  0000 C CNN
-F 1 "GND" H 5250 4550 50  0000 C CNN
-F 2 "" H 5450 4500 50  0001 C CNN
-F 3 "~" H 5450 4500 50  0001 C CNN
-	1    5450 4500
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5450 4300 5450 3700
 Connection ~ 5450 3700
 Wire Wire Line
 	5450 3700 5350 3700
 $Comp
-L Connector:Conn_01x01_Female J?
+L Connector:Conn_01x01_Female J2
 U 1 1 6022D25C
 P 5650 4500
-F 0 "J?" H 5450 4450 50  0000 C CNN
+F 0 "J2" H 5450 4450 50  0000 C CNN
 F 1 "LED-" H 5450 4550 50  0000 C CNN
-F 2 "" H 5650 4500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5650 4500 50  0001 C CNN
 F 3 "~" H 5650 4500 50  0001 C CNN
 	1    5650 4500
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J?
+L Connector:Conn_01x01_Female J3
 U 1 1 6022D62E
 P 5850 4500
-F 0 "J?" H 5650 4450 50  0000 C CNN
+F 0 "J3" H 5650 4450 50  0000 C CNN
 F 1 "LED+" H 5650 4550 50  0000 C CNN
-F 2 "" H 5850 4500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5850 4500 50  0001 C CNN
 F 3 "~" H 5850 4500 50  0001 C CNN
 	1    5850 4500
 	0    1    1    0   
@@ -404,12 +360,12 @@ Wire Wire Line
 Text Notes 3750 1950 0    50   ~ 0
 constant current source - buck converter
 $Comp
-L Device:Q_NMOS_GSD Q?
+L Device:Q_NMOS_GSD Q1
 U 1 1 6020B63A
 P 5750 3950
-F 0 "Q?" H 5900 3850 50  0000 L CNN
+F 0 "Q1" H 5900 3850 50  0000 L CNN
 F 1 "IRLML0030" H 5900 4050 50  0000 L CNN
-F 2 "" H 5950 4050 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5950 4050 50  0001 C CNN
 F 3 "~" H 5750 3950 50  0001 C CNN
 	1    5750 3950
 	-1   0    0    1   
@@ -431,23 +387,23 @@ Connection ~ 6450 3200
 Wire Wire Line
 	6450 3200 5750 3200
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 602251E7
 P 4500 3500
-F 0 "C?" H 4600 3400 50  0000 R CNN
+F 0 "C1" H 4600 3400 50  0000 R CNN
 F 1 "100n" H 4700 3600 50  0000 R CNN
-F 2 "" H 4538 3350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4538 3350 50  0001 C CNN
 F 3 "~" H 4500 3500 50  0001 C CNN
 	1    4500 3500
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 60225806
 P 4700 3300
-F 0 "R?" V 4700 3250 50  0000 L CNN
+F 0 "R5" V 4700 3250 50  0000 L CNN
 F 1 "10k" V 4800 3250 50  0000 L CNN
-F 2 "" V 4630 3300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4630 3300 50  0001 C CNN
 F 3 "~" H 4700 3300 50  0001 C CNN
 	1    4700 3300
 	0    1    1    0   
@@ -472,10 +428,10 @@ Connection ~ 6000 2750
 Wire Wire Line
 	6000 2750 6300 2750
 $Comp
-L power:PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG01
 U 1 1 604F43EE
 P 4100 2300
-F 0 "#FLG?" H 4100 2375 50  0001 C CNN
+F 0 "#FLG01" H 4100 2375 50  0001 C CNN
 F 1 "PWR_FLAG" H 4100 2473 50  0000 C CNN
 F 2 "" H 4100 2300 50  0001 C CNN
 F 3 "~" H 4100 2300 50  0001 C CNN
@@ -487,4 +443,39 @@ Wire Wire Line
 Connection ~ 4100 2400
 Wire Wire Line
 	4100 2400 3850 2400
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 603C6B34
+P 2700 3950
+F 0 "J1" H 2600 4200 50  0000 C CNN
+F 1 "Conn" H 2500 4000 50  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0410_1x04_P1.25mm_Vertical" H 2700 3950 50  0001 C CNN
+F 3 "~" H 2700 3950 50  0001 C CNN
+	1    2700 3950
+	-1   0    0    -1  
+$EndComp
+Text Label 3650 2400 2    50   ~ 0
+VIN
+Text Label 3650 2800 2    50   ~ 0
+SHDN
+Text Label 6600 3200 0    50   ~ 0
+PWM
+Text Label 5450 4300 3    50   ~ 0
+GND
+Text Label 2950 3950 0    50   ~ 0
+GND
+Text Label 2950 4150 0    50   ~ 0
+SHDN
+Text Label 2950 3850 0    50   ~ 0
+VIN
+Text Label 2950 4050 0    50   ~ 0
+PWM
+Wire Wire Line
+	2950 4050 2900 4050
+Wire Wire Line
+	2950 4150 2900 4150
+Wire Wire Line
+	2900 3950 2950 3950
+Wire Wire Line
+	2950 3850 2900 3850
 $EndSCHEMATC
