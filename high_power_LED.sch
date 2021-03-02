@@ -161,8 +161,6 @@ F 3 "~" H 5500 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 3450 4500 3450
-Wire Wire Line
 	5500 2450 5500 2500
 Wire Wire Line
 	5500 2500 6050 2500
@@ -181,25 +179,14 @@ Wire Wire Line
 Wire Wire Line
 	4500 2050 4450 2050
 $Comp
-L Connector:Conn_01x01_Female J1
+L Connector:Conn_01x02_Female J1
 U 1 1 602C1EF5
-P 4700 2050
-F 0 "J1" H 4700 2100 50  0000 R CNN
-F 1 "Anode" H 4950 2050 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4700 2050 50  0001 C CNN
-F 3 "~" H 4700 2050 50  0001 C CNN
-	1    4700 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J2
-U 1 1 602C2C18
-P 4700 3450
-F 0 "J2" H 4700 3500 50  0000 R CNN
-F 1 "Cathode" H 5050 3450 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4700 3450 50  0001 C CNN
-F 3 "~" H 4700 3450 50  0001 C CNN
-	1    4700 3450
+P 5100 3350
+F 0 "J1" H 5100 3400 50  0000 R CNN
+F 1 "LED" V 5200 3350 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5100 3350 50  0001 C CNN
+F 3 "~" H 5100 3350 50  0001 C CNN
+	1    5100 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -253,14 +240,28 @@ temperature measurement
 Text Notes 3750 1900 0    50   ~ 0
 high power LED
 $Comp
-L Connector:Conn_01x02_Female J3
+L Connector:Conn_01x02_Female J2
 U 1 1 602C273F
 P 6400 2200
-F 0 "J3" H 6450 2300 50  0000 R CNN
+F 0 "J2" H 6450 2300 50  0000 R CNN
 F 1 "TH" H 6550 2150 50  0000 R CNN
 F 2 "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical" H 6400 2200 50  0001 C CNN
 F 3 "~" H 6400 2200 50  0001 C CNN
 	1    6400 2200
 	1    0    0    -1  
 $EndComp
+Text Label 4500 2050 0    50   ~ 0
+Anode
+Text Label 4850 3450 2    50   ~ 0
+Cathode
+Wire Wire Line
+	4450 3450 4900 3450
+Wire Wire Line
+	4900 3350 4850 3350
+Text Label 4850 3350 2    50   ~ 0
+Anode
+Text Label 6050 2200 0    50   ~ 0
+TH+
+Text Label 6050 2300 0    50   ~ 0
+TH-
 $EndSCHEMATC
