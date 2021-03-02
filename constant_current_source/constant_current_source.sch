@@ -332,29 +332,16 @@ Connection ~ 5450 3700
 Wire Wire Line
 	5450 3700 5350 3700
 $Comp
-L Connector:Conn_01x01_Female J2
+L Connector:Conn_01x02_Female J2
 U 1 1 6022D25C
-P 5650 4500
-F 0 "J2" H 5450 4450 50  0000 C CNN
-F 1 "LED-" H 5450 4550 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5650 4500 50  0001 C CNN
-F 3 "~" H 5650 4500 50  0001 C CNN
-	1    5650 4500
-	0    1    1    0   
+P 5700 4800
+F 0 "J2" H 5600 4650 50  0000 C CNN
+F 1 "LED" V 5750 4750 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5700 4800 50  0001 C CNN
+F 3 "~" H 5700 4800 50  0001 C CNN
+	1    5700 4800
+	0    -1   1    0   
 $EndComp
-$Comp
-L Connector:Conn_01x01_Female J3
-U 1 1 6022D62E
-P 5850 4500
-F 0 "J3" H 5650 4450 50  0000 C CNN
-F 1 "LED+" H 5650 4550 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5850 4500 50  0001 C CNN
-F 3 "~" H 5850 4500 50  0001 C CNN
-	1    5850 4500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5850 4300 5850 3300
 Wire Wire Line
 	5750 3300 5850 3300
 Text Notes 3750 1950 0    50   ~ 0
@@ -372,8 +359,6 @@ F 3 "~" H 5750 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5450 3700 5650 3700
-Wire Wire Line
-	5650 4150 5650 4300
 Wire Wire Line
 	5650 3750 5650 3700
 Connection ~ 5650 3700
@@ -478,4 +463,20 @@ Wire Wire Line
 	2900 3950 2950 3950
 Wire Wire Line
 	2950 3850 2900 3850
+Wire Wire Line
+	5650 4250 5700 4250
+Wire Wire Line
+	5700 4250 5700 4600
+Wire Wire Line
+	5800 4600 5800 4250
+Wire Wire Line
+	5800 4250 5850 4250
+Wire Wire Line
+	5850 4250 5850 3300
+Text Label 5700 4550 1    50   ~ 0
+Cathode
+Text Label 5800 4550 1    50   ~ 0
+Anode
+Wire Wire Line
+	5650 4150 5650 4250
 $EndSCHEMATC
