@@ -370,7 +370,7 @@ U 1 1 60380781
 P 6000 1050
 F 0 "J3" H 6028 1026 50  0000 L CNN
 F 1 "UART" H 6028 935 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6000 1050 50  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0410_1x04_P1.25mm_Vertical" H 6000 1050 50  0001 C CNN
 F 3 "~" H 6000 1050 50  0001 C CNN
 	1    6000 1050
 	1    0    0    -1  
@@ -397,7 +397,7 @@ U 1 1 603B1DD8
 P 5100 1150
 F 0 "J2" H 5128 1176 50  0000 L CNN
 F 1 "SPI" H 5128 1085 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5100 1150 50  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 5100 1150 50  0001 C CNN
 F 3 "~" H 5100 1150 50  0001 C CNN
 	1    5100 1150
 	1    0    0    -1  
@@ -450,7 +450,7 @@ U 1 1 603F388D
 P 6900 1050
 F 0 "J4" H 6928 1026 50  0000 L CNN
 F 1 "I2C" H 6928 935 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6900 1050 50  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0410_1x04_P1.25mm_Vertical" H 6900 1050 50  0001 C CNN
 F 3 "~" H 6900 1050 50  0001 C CNN
 	1    6900 1050
 	1    0    0    -1  
@@ -635,7 +635,7 @@ U 1 1 603F5BCB
 P 10450 1050
 F 0 "J11" H 10478 1026 50  0000 L CNN
 F 1 "CAN" H 10478 935 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10450 1050 50  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0410_1x04_P1.25mm_Vertical" H 10450 1050 50  0001 C CNN
 F 3 "~" H 10450 1050 50  0001 C CNN
 	1    10450 1050
 	1    0    0    -1  
@@ -950,7 +950,7 @@ Wire Wire Line
 Connection ~ 6800 4550
 Text Label 6800 4500 1    50   ~ 0
 TEMP3
-Text Label 7050 4550 0    50   ~ 0
+Text Label 6250 4550 0    50   ~ 0
 ADC1_IN15
 Text Label 6000 4500 1    50   ~ 0
 TEMP2
@@ -991,7 +991,7 @@ F 3 "~" H 6000 4750 50  0001 C CNN
 	1    6000 4750
 	1    0    0    -1  
 $EndComp
-Text Label 6250 4550 0    50   ~ 0
+Text Label 10150 1850 2    50   ~ 0
 ADC1_IN12
 Wire Notes Line
 	5850 5250 7500 5250
@@ -1005,7 +1005,7 @@ Text Label 7500 1400 2    50   ~ 0
 TEMP2
 Text Label 8400 1400 2    50   ~ 0
 TEMP3
-Text Label 10150 1850 2    50   ~ 0
+Text Label 7050 4550 0    50   ~ 0
 ADC1_IN16
 Wire Wire Line
 	3900 1300 3850 1300
@@ -1114,7 +1114,7 @@ U 1 1 605E8F08
 P 10400 1850
 F 0 "J10" H 10428 1826 50  0000 L CNN
 F 1 "POTI" H 10428 1735 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10400 1850 50  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0310_1x03_P1.25mm_Vertical" H 10400 1850 50  0001 C CNN
 F 3 "~" H 10400 1850 50  0001 C CNN
 	1    10400 1850
 	1    0    0    -1  
@@ -1496,8 +1496,6 @@ Wire Wire Line
 	8450 1000 8400 1000
 Wire Wire Line
 	8400 900  8450 900 
-Text Notes 7000 3200 0    50   ~ 0
-voltage dividers for NTC\nall NTCs will be connected to 3V3
 $Comp
 L Connector:Conn_01x03_Female J6
 U 1 1 60452B6E
